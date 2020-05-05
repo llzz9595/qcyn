@@ -76,7 +76,7 @@ def CutVideo2Image(video_path, img_path):
     while(True):
         ret,frame = cap.read() 
         if ret and index < 2000:
-            # cv2.imwrite(img_path + '%d.jpg' % index, frame)
+            cv2.imwrite(img_path + '%d.jpg' % index, frame)
             index += 1
         else:
             break
